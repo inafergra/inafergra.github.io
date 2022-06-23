@@ -10,6 +10,24 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Set additional styling options for the columns*/
+			.column_left {
+			float: left;
+			width: 70%;
+			}
+
+			.column_right {
+			float: right;
+			width: 30%;
+			}
+	
+			.row:after {
+			content: "";
+			display: table;
+			clear: both;
+			}
+			</style>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -37,17 +55,30 @@
 			<!-- Highlights -->
 				<section class="wrapper style1">
 					<div class="container">
-						<div class="row gtr-200">
-						<h2>
-							Hi!  Welcome to my personal webpage.
-						</h2>
-											
-						<img src="photo.jpg" alt="" style="width:400px;height:auto;"> 
-						<h1>
-							I am Ignacio Fernández Graña, a physicist working in quantum information,
-							machine learning and quantum technologies.
+
+						<div class="row">
+							<div class="column_left">
+								<p> 
+									<center>  
+										<h2>Hi!  Welcome to my personal webpage.</h2>
+									</center>
+								</p>
+								<p>
+									<center>
+										<h1>I am Ignacio Fernández Graña, a physicist working in quantum information,
+										machine learning and quantum technologies.</h1>
+									</center>
+								</p>
+							</div>
+							<div class="column_right">
+								<img src="images/photo.jpg"  style="width:300px;height:auto;" class="center">
+							</div>
+						</div>
+
 						</h1>
-						<p> This site is still under construction, sorry for the incoveniences! </p>
+							<p> 
+								This site is still under construction, sorry for the incoveniences! 
+							</p>
 						</div>
 					</div>
 				</section>
