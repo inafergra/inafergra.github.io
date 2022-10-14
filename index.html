@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title> Ignacio Fernández Graña </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -178,13 +178,12 @@
 						<article id="Interests">
 							<h2 class="major">Interests</h2>
 							<p>Outside physics and computing, I like to play music, sports and I <a href="#Reads">read</a>.
-								.
 							<br>
-							I have made noise with several music bands</p>
+							I also have made noise with several music bands</p>
 								
 							<center><span class="image main"><img  src="images/guitar2.png" alt=""  /></span></center>
 							<p>
-							I also enjoy travelling. 
+							I also enjoy  <a href="#Travelling">travelling</a>. 
 							</p>
 						</article>
 
@@ -217,26 +216,128 @@
 								<li> <i>The Handmaid's tale</i> - Margaret Atwood</li>
 								<li> <i>The kite runner</i> - Khaled Hosseini</li>
 								<li> <i>Ficciones</i> - Jorge Luis Borges</li>
+								<li> <i>Sputnik Sweetheart</i> - Haruki Murakami</li>
 							</ul>
 
 							<h4>2021</h4>
 							<ul>
+								<li> <i>The Muse</i> - Jessie Burton </li>
 								<li> <i>Say nothing</i> - Patrick Radden Keefe</li>
 								<li> <i>Hitchhiker's guide to the galaxy</i> - Douglas Adams</li>
 							</ul>
 
-							<br>
-							<br>
-							<center>
-							<ul class="icons">
-								<li><a href="https://twitter.com/ina_fdz" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<!--<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-								<!--li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
-								<li><a href="https://github.com/inafergra" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							</ul>
-							</center>
 						</article>
 
+						<!-- Travelling -->
+						<article id="Travelling">
+							<h2 class="major">Countries I've been to</h2>
+							<head>
+								<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+								<script type="text/javascript">
+								google.charts.load('current', {
+									'packages':['geochart'],
+								});
+								google.charts.setOnLoadCallback(drawRegionsMap);
+
+								function drawRegionsMap() {
+									var data = google.visualization.arrayToDataTable([
+									['Country' ],
+									['Germany'],
+									['Spain'],
+									['France'],
+									['Portugal'],
+									['Netherlands'],
+									['United Kingdom'],
+									['Ireland'],
+									['Finland'],
+									['Sweden'],
+									['Norway'],
+									['Czech Republic'],
+									['Poland'],
+									['Belgium'],
+									]);
+									var options = {height:450, region: '150', markerOpacity:0.6, datalessRegionColor: "#e1f7c1", defaultColor:"#1bd422",  legend: {textStyle: {color: 'blue', fontSize: 16}}};
+									var chart = new google.visualization.GeoChart(document.getElementById('europe'));
+									chart.draw(data, options);
+								}
+								</script>
+								<script type="text/javascript">
+									google.charts.load('current', {
+										'packages':['geochart'],
+									});
+									google.charts.setOnLoadCallback(drawRegionsMap);
+	
+									function drawRegionsMap() {
+										var data = google.visualization.arrayToDataTable([
+										['Country'],
+										['Morocco'],
+										]);
+										var options = {height:450, region: '002', datalessRegionColor: "#e1f7c1", defaultColor:"#1bd422"};
+										var chart = new google.visualization.GeoChart(document.getElementById('africa'));
+										chart.draw(data, options);
+									}
+								</script>
+								<script type="text/javascript">
+									google.charts.load('current', {
+										'packages':['geochart'],
+									});
+									google.charts.setOnLoadCallback(drawRegionsMap);
+	
+									function drawRegionsMap() {
+										var data = google.visualization.arrayToDataTable([
+										['Country'],
+										]);
+										var options = {height:450, region: '142', datalessRegionColor: "#e1f7c1", defaultColor:"#1bd422"};
+										var chart = new google.visualization.GeoChart(document.getElementById('asia'));
+										chart.draw(data, options);
+									}
+								</script>
+								<script type="text/javascript">
+									google.charts.load('current', {
+										'packages':['geochart'],
+									});
+									google.charts.setOnLoadCallback(drawRegionsMap);
+	
+									function drawRegionsMap() {
+										var data = google.visualization.arrayToDataTable([
+										['Country'],
+										]);
+										var options = {height:450, region: '019', datalessRegionColor: "#e1f7c1", defaultColor:"#1bd422"};
+										var chart = new google.visualization.GeoChart(document.getElementById('americas'));
+										chart.draw(data, options);
+									}
+								</script>
+								<script type="text/javascript">
+									google.charts.load('current', {
+										'packages':['geochart'],
+									});
+									google.charts.setOnLoadCallback(drawRegionsMap);
+	
+									function drawRegionsMap() {
+										var data = google.visualization.arrayToDataTable([
+										['Country'],
+										]);
+										var options = {height:450, region: '009', datalessRegionColor: "#e1f7c1", defaultColor:"#1bd422"};
+										var chart = new google.visualization.GeoChart(document.getElementById('oceania'));
+										chart.draw(data, options);
+									}
+								</script>
+							</head>
+							<body>
+								<center><h3 class="major">Europe</h3></center>
+								<div id="europe" style="width: 900px; height: 500px;"></div>
+								<center><h3 class="major">Africa</h3></center>
+								<div id="africa" style="width: 900px; height: 500px;"></div>
+								<center><h3 class="major">Americas</h3></center>
+								<div id="americas" style="width: 900px; height: 500px;"></div>
+								<center><h3 class="major">Asia</h3></center>
+								<div id="asia" style="width: 900px; height: 500px;"></div>
+								<center><h3 class="major">Oceania</h3></center>
+								<div id="oceania" style="width: 900px; height: 500px;"></div>
+							</body>
+							</html>
+
+						</article>
 
 						<!-- Elements -->
 							<article id="elements">
