@@ -229,7 +229,7 @@
 
 						<!-- Travelling -->
 						<article id="Travelling">
-							<h2 class="major">Countries I've been to</h2>
+							<h2 class="major">Countries I've visited</h2>
 							<head>
 								<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 								<script type="text/javascript">
@@ -255,7 +255,7 @@
 									['Poland'],
 									['Belgium'],
 									]);
-									var options = {height:450, region: '150', markerOpacity:0.6, datalessRegionColor: "#e1f7c1", defaultColor:"#1bd422",  legend: {textStyle: {color: 'blue', fontSize: 16}}};
+									var options = { region: '150', markerOpacity:0.6, datalessRegionColor: "#e1f7c1", defaultColor:"#1bd422"};
 									var chart = new google.visualization.GeoChart(document.getElementById('europe'));
 									chart.draw(data, options);
 								}
@@ -271,7 +271,7 @@
 										['Country'],
 										['Morocco'],
 										]);
-										var options = {height:450, region: '002', datalessRegionColor: "#e1f7c1", defaultColor:"#1bd422"};
+										var options = {region: '002', datalessRegionColor: "#e1f7c1", defaultColor:"#1bd422"};
 										var chart = new google.visualization.GeoChart(document.getElementById('africa'));
 										chart.draw(data, options);
 									}
@@ -286,7 +286,7 @@
 										var data = google.visualization.arrayToDataTable([
 										['Country'],
 										]);
-										var options = {height:450, region: '142', datalessRegionColor: "#e1f7c1", defaultColor:"#1bd422"};
+										var options = {region: '142', datalessRegionColor: "#e1f7c1", defaultColor:"#1bd422"};
 										var chart = new google.visualization.GeoChart(document.getElementById('asia'));
 										chart.draw(data, options);
 									}
@@ -301,7 +301,7 @@
 										var data = google.visualization.arrayToDataTable([
 										['Country'],
 										]);
-										var options = {height:450, region: '019', datalessRegionColor: "#e1f7c1", defaultColor:"#1bd422"};
+										var options = { region: '019', datalessRegionColor: "#e1f7c1", defaultColor:"#1bd422"};
 										var chart = new google.visualization.GeoChart(document.getElementById('americas'));
 										chart.draw(data, options);
 									}
@@ -316,7 +316,7 @@
 										var data = google.visualization.arrayToDataTable([
 										['Country'],
 										]);
-										var options = {height:450, region: '009', datalessRegionColor: "#e1f7c1", defaultColor:"#1bd422"};
+										var options = { region: '009', datalessRegionColor: "#e1f7c1", defaultColor:"#1bd422"};
 										var chart = new google.visualization.GeoChart(document.getElementById('oceania'));
 										chart.draw(data, options);
 									}
@@ -324,15 +324,15 @@
 							</head>
 							<body>
 								<center><h3 class="major">Europe</h3></center>
-								<div id="europe" style="width: 900px; height: 500px;"></div>
+								<center><div id="europe" style="width: 100%; height: auto"></div></center>
 								<center><h3 class="major">Africa</h3></center>
-								<div id="africa" style="width: 900px; height: 500px;"></div>
+								<center><div id="africa" style="width: 100%; height: auto"></div></center>
 								<center><h3 class="major">Americas</h3></center>
-								<div id="americas" style="width: 900px; height: 500px;"></div>
+								<center><div id="americas" style="width: 100%; height: auto"></div></center>
 								<center><h3 class="major">Asia</h3></center>
-								<div id="asia" style="width: 900px; height: 500px;"></div>
+								<center><div id="asia" style="width: 100%; height: auto"></div></center>
 								<center><h3 class="major">Oceania</h3></center>
-								<div id="oceania" style="width: 900px; height: 500px;"></div>
+								<center><div id="oceania" style="width: 100%; height: auto"></div></center>
 							</body>
 							</html>
 
