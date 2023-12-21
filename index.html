@@ -282,7 +282,11 @@
 				<h2 class="major">Reads</h2>
 				<h4>2023</h4>
 				<ul>
-
+					<li> <i>Crime and Punishment</i> - Fyodor Dostoevsky </li>
+					<li> <i>Empire of Pain</i> - Patrick Radden Keefe</li>
+					<li> <i> The Hundred-Year-Old Man Who Climbed Out the Window and Disappeared</i> - Jonas Jonasson
+					</li>
+					<li> <i>Dune</i> - Frank Herbert</li>
 				</ul>
 				<h4>2022</h4>
 				<ul>
@@ -334,6 +338,9 @@
 								['Czech Republic'],
 								['Poland'],
 								['Belgium'],
+								['Luxembourg'],
+								['Italy'],
+								['Switzerland'],
 							]);
 							var options = { region: '150', markerOpacity: 0.6, datalessRegionColor: "#e1f7c1", defaultColor: "#1bd422" };
 							var chart = new google.visualization.GeoChart(document.getElementById('europe'));
@@ -380,6 +387,7 @@
 						function drawRegionsMap() {
 							var data = google.visualization.arrayToDataTable([
 								['Country'],
+								['US']
 							]);
 							var options = { region: '019', datalessRegionColor: "#e1f7c1", defaultColor: "#1bd422" };
 							var chart = new google.visualization.GeoChart(document.getElementById('americas'));
